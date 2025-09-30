@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algorithms - ML & AI Universe</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html" class="logo">ML & AI Universe</a>
+            <ul>
+                <li><a href="basics.html">Basics</a></li>
+                <li><a href="core_concepts.html">Core Concepts</a></li>
+                <li><a href="algorithms.html">Algorithms</a></li>
+                <li><a href="deep_learning.html">Deep Learning</a></li>
+                <li><a href="generative_ai.html">Generative AI</a></li>
+                <li><a href="agentic_ai.html">Agentic AI</a></li>
+                <li><a href="resources.html">Resources</a></li>
+            </ul>
+            <div class="nav-actions">
+                <div class="search-container">
+                    <input type="text" id="search-bar" placeholder="Search...">
+                    <button id="search-btn">Search</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="breadcrumbs">
+        <a href="../index.html">Home</a> &gt; <span>Algorithms</span>
+    </div>
+
+    <main>
+        <h1>ML Algorithms</h1>
+        <button class="collapsible">Linear Regression</button>
+        <div class="content">
+            <p>Linear regression is a basic and commonly used type of predictive analysis. The overall idea of regression is to examine two things: (1) does a set of predictor variables do a good job in predicting an outcome (dependent) variable? (2) Which variables in particular are significant predictors of the outcome variable, and in what way do they–indicated by the magnitude and sign of the beta estimates–impact the outcome variable?</p>
+            <div class="code-snippet">
+                <button>Copy</button>
+                <pre><code>
+import numpy as np
+from sklearn.linear_model import LinearRegression
+
+# Sample Data
+X = np.array([[1], [2], [3], [4], [5]])
+y = np.array([2, 4, 5, 4, 5])
+
+# Create and train the model
+model = LinearRegression()
+model.fit(X, y)
+
+# Predict
+print(model.predict(np.array([[6]])))
+                </code></pre>
+            </div>
+        </div>
+
+        <button class="collapsible">Logistic Regression</button>
+        <div class="content">
+            <p>Logistic regression is a statistical model that in its basic form uses a logistic function to model a binary dependent variable, although many more complex extensions exist. In regression analysis, logistic regression (or logit regression) is estimating the parameters of a logistic model (a form of binary regression).</p>
+        </div>
+
+        <button class="collapsible">Decision Trees</button>
+        <div class="content">
+            <p>Explanation of Decision Trees.</p>
+        </div>
+
+        <button class="collapsible">Support Vector Machines (SVM)</button>
+        <div class="content">
+            <p>Explanation of SVM.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 ML & AI Universe. All rights reserved.</p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/search.js"></script>
+</body>
+</html>

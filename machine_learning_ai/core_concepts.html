@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Core Concepts - ML & AI Universe</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html" class="logo">ML & AI Universe</a>
+            <ul>
+                <li><a href="basics.html">Basics</a></li>
+                <li><a href="core_concepts.html">Core Concepts</a></li>
+                <li><a href="algorithms.html">Algorithms</a></li>
+                <li><a href="deep_learning.html">Deep Learning</a></li>
+                <li><a href="generative_ai.html">Generative AI</a></li>
+                <li><a href="agentic_ai.html">Agentic AI</a></li>
+                <li><a href="resources.html">Resources</a></li>
+            </ul>
+            <div class="nav-actions">
+                <div class="search-container">
+                    <input type="text" id="search-bar" placeholder="Search...">
+                    <button id="search-btn">Search</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="breadcrumbs">
+        <a href="../index.html">Home</a> &gt; <span>Core Concepts</span>
+    </div>
+
+    <main>
+        <h1>Core Concepts</h1>
+        <button class="collapsible">Data Preprocessing</button>
+        <div class="content">
+            <p>Data preprocessing is a crucial step in the machine learning pipeline. It involves cleaning and transforming raw data into a format that is suitable for a machine learning model. Key techniques include:</p>
+            <ul>
+                <li><strong>Data Cleaning:</strong> Handling missing values, correcting inconsistencies, and removing outliers.</li>
+                <li><strong>Feature Scaling:</strong> Normalizing or standardizing numerical features to bring them to a similar scale.</li>
+                <li><strong>Categorical Encoding:</strong> Converting categorical variables into a numerical format (e.g., one-hot encoding).</li>
+            </ul>
+        </div>
+
+        <button class="collapsible">Cost Functions</button>
+        <div class="content">
+            <p>A cost function, or loss function, measures the performance of a machine learning model. It quantifies the error between the predicted values and the actual values. The goal of training a model is to minimize this function.</p>
+            <div style="height:300px; position: relative;">
+                <canvas id="costFunctionChart"></canvas>
+            </div>
+        </div>
+
+        <button class="collapsible">Activation Functions</button>
+        <div class="content">
+            <p>Activation functions are a critical component of neural networks. They introduce non-linearity into the model, allowing it to learn complex patterns. Common activation functions include:</p>
+            <ul>
+                <li><strong>Sigmoid:</strong> Maps input values to a range between 0 and 1.</li>
+                <li><strong>ReLU (Rectified Linear Unit):</strong> Outputs the input directly if it is positive, otherwise, it outputs zero. It is the most widely used activation function.</li>
+                <li><strong>Tanh (Hyperbolic Tangent):</strong> Similar to sigmoid, but maps inputs to a range between -1 and 1.</li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 ML & AI Universe. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/charts.js"></script>
+    <script src="../js/search.js"></script>
+</body>
+</html>
